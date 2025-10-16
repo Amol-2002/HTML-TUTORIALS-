@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form for travel agency</title>
+    <style>
+        /* ===== Global Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== Body Styling ===== */
+body {
+  background: linear-gradient(135deg, #00b4db, #0083b0);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== Form Container ===== */
+form {
+  background: #ffffff;
+  padding: 40px 50px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  transition: all 0.3s ease;
+}
+
+form:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* ===== Input Field Containers ===== */
+form div {
+  margin-bottom: 20px;
+}
+
+/* ===== Labels ===== */
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+  font-size: 15px;
+}
+
+/* ===== Input & Textarea Styling ===== */
+input,
+textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1.8px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* ===== Focus Effect ===== */
+input:focus,
+textarea:focus {
+  border-color: #00b4db;
+  box-shadow: 0 0 5px rgba(0, 180, 219, 0.4);
+}
+
+/* ===== Textarea Resize Control ===== */
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+/* ===== Submit Button ===== */
+button {
+  width: 100%;
+  padding: 12px 0;
+  background: linear-gradient(135deg, #00b4db, #0083b0);
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+/* ===== Button Hover Effect ===== */
+button:hover {
+  background: linear-gradient(135deg, #0083b0, #00b4db);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 180, 219, 0.4);
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 480px) {
+  form {
+    padding: 30px 25px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  input,
+  textarea {
+    font-size: 14px;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <form action="">
+        <div>
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Enter Your Name">
+        </div>
+
+        <div>
+            <label for="age">Age</label>
+            <input id="age" type="text" placeholder="Enter Your Age">
+        </div>
+
+        <div>
+            <label for="phone">Phone</label>
+            <input id="phone"  type="tel" placeholder="Enter Your Mobile Number">
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Enter Your Email Address">
+        </div>
+
+        <div>
+            <label for="add">Address</label>
+            <textarea name="Address" id="add"></textarea>
+        </div>
+
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>

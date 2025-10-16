@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* ===== Global Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== Body Styling ===== */
+body {
+  background: linear-gradient(135deg, #1f4037, #99f2c8);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== Table Styling ===== */
+table {
+  border-collapse: collapse;
+  width: 70%;
+  max-width: 800px;
+  background: white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* ===== Table Header ===== */
+thead {
+  background: linear-gradient(135deg, #11998e, #38ef7d);
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+th {
+  padding: 15px 20px;
+  font-size: 16px;
+  text-align: left;
+}
+
+/* ===== Table Rows ===== */
+td {
+  padding: 14px 20px;
+  font-size: 15px;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  transition: all 0.3s ease;
+}
+
+/* ===== Row Hover Effect ===== */
+tbody tr:hover {
+  background: #f1fff6;
+  transform: scale(1.01);
+  transition: all 0.2s ease-in-out;
+}
+
+/* ===== Alternate Row Colors ===== */
+tbody tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+/* ===== Add Subtle Animation ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 600px) {
+  table {
+    width: 90%;
+  }
+
+  th,
+  td {
+    padding: 12px;
+    font-size: 14px;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Score</th>
+                    <th>Match</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Amol</td>
+                    <td>56</td>
+                    <td>IPL-2024</td>
+                </tr>
+
+                <tr>
+                    <td>Chetan</td>
+                    <td>60</td>
+                    <td>IPL-2025</td>
+                </tr>
+
+                <tr>
+                    <td>Gaurav</td>
+                    <td>80</td>
+                    <td>IPL-2025</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</body>
+</html>
