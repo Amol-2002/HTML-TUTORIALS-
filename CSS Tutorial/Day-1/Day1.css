@@ -1,0 +1,61 @@
+/* universal selector apply to whole page */
+*{
+text-align: center;
+}
+h1{
+    font-weight: 100;
+    color:red;
+    width: 100%;
+}
+p{
+    color:rgb(233, 176, 54);
+}
+
+#headingOne{
+   font-family: 'Times New Roman', Times, serif;
+    text-transform:capitalize;
+    text-align: center;
+    border-style: double;
+    text-decoration:underline;
+    border-color: black;border-width: 10px;
+    /* border-radius: 50%; for circle */
+    border-radius: 25px
+}
+
+body{
+    /* background-color: rgb(255, 255, 0); */
+    background-color: #f4f4f1;
+}
+#box{
+    background-color: blue;
+    text-align: center;
+}
+.heading{
+    color: red;
+}
+button{
+    background-color: green;
+}
+#para1{
+    font-family: 'Times New Roman', Times, serif;
+    text-transform:capitalize;
+    text-align: center;
+    border-style: double;
+    text-decoration:underline;
+    border-color: black;border-width: 10px;
+    /* border-radius: 50%; for circle */
+    border-radius: 25px;
+}
+#outer{
+font-size: 25px;
+}
+#inner{
+    font-size: 10px;
+}
+#div1{
+    height: 100px;
+    width: 100px;
+    border-style: dashed;
+    border-radius: 50px;
+    background-color: green;
+}
