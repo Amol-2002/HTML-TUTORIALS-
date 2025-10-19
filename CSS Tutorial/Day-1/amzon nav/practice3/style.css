@@ -1,0 +1,27 @@
+div {
+  height: 100px;
+  width: 100px;
+  background-color: aquamarine;
+  border: 2px solid black;
+  display: inline-block;
+ }
+ /*
+
+#box2 {
+  position: relative;
+  top: 20px;
+}
+#box3 {
+  position: sticky;
+  top: 0px;
+  left: 20px;
+}
+#box4 {
+  position: fixed;
+  top: 0;
+} */
+
+#box1{
+    background-image: url("amolphoto.png");
+    background-size: cover;
+}

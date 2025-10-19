@@ -1,0 +1,30 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-color:aquamarine;
+    border: 2px solid black;
+    position: absolute;
+    top: 50vh;
+    /* transition: all 1s ease-in; */
+    transform: scale(0.5); size 
+}
+
+div:hover{
+    background-color: red;
+    color: white;
+   font-size:  20px;
+}
+div:active{
+    background-color: green;
+     transform: rotate(90deg);
+}
+img{
+    height: 100px;
+    width: 100px;
+    transition: all 1s ease-in;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+img:active{
+     transform: rotate(90deg);}
